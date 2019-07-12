@@ -21,6 +21,16 @@ is_cfi = true
 enable_remoting = false
 enable_reporting = false
 
+# use local database for Safe Browsing checks
+safe_browsing_mode = 3
+
+# API key for the optional Safe Browsing feature in Vanadium
+#
+# Do not reuse this key in another project. Obtain your own API key(s) instead:
+#
+# https://www.chromium.org/developers/how-tos/api-keys
+google_api_key = "AIzaSyBosp_XnBdN2W5zuvqs9db46T5525VLJM8"
+
 # sample apk signing setup
 android_keystore_path = "//vanadium.keystore"
 android_keystore_name = "vanadiumkey"
