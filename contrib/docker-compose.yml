@@ -1,0 +1,12 @@
+version: '3'
+services:
+    vanadium-builder:
+        build: .
+        image: renlord/vanadium-builder:latest
+        user: "${UID}"
+        environment:
+            - ANDROID_CHROMIUM_TARGET_CPU=arm
+            - ANDROID_CHROMIUM_TARGET_OS=android
+        volumes:
+            - .:/vanadium
+
